@@ -1,0 +1,15 @@
+# netlify.toml
+
+# Build settings for the frontend
+[build]
+  # Directory (relative to root) containing your index.html, css, js
+  publish = "public"
+  # No build command needed for simple static files
+  # command = "npm run build" # Uncomment if you add a build step
+
+# Settings for Netlify Functions
+[functions]
+  # Directory (relative to root) where your serverless functions live
+  directory = "netlify/functions/"
+  # Use the esbuild bundler for Node.js functions (recommended)
+  node_bundler = "esbuild"

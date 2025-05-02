@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Libet Clock Task</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Online Libet Clock Task</h1>
+
+<div id="clock-container">
+  <div id="clock">
+    <div id="clock-face">
+      <div id="pointer"></div>
+      <!-- Ticks and labels will be added by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- Main Task Control -->
+<div id="controls">
+    <button id="start-button" class="button">Start Task</button>
+</div>
+
+<!-- Status Display -->
+<div id="time-display">Ready... (Participant ID: <span id="participant-id-display">Loading...</span>)</div>
+
+<!-- Intention Input Section (Initially Hidden) -->
+<div id="intention-section">
+    <label for="intention-input" id="intention-label">Report Intention Time (1-60):</label>
+    <input type="number" id="intention-input" min="1" max="60">
+    <button id="confirm-intention-button" class="button">Confirm & Send Data</button>
+</div>
+
+<!-- Data Management Buttons -->
+<div id="data-actions">
+    <button id="download-csv-button" class="button">Download Session Data (CSV)</button>
+    <button id="clear-button" class="button">Clear Session Log</button>
+</div>
+
+<!-- Results Display Area -->
+<div id="results-log">
+    <h2>Session Log</h2>
+    <!-- Log entries for the current session will appear here -->
+</div>
+
+<!-- Link to the external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
